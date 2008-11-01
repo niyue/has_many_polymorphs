@@ -6,11 +6,12 @@ Echoe.new("has_many_polymorphs") do |p|
   p.summary = "An ActiveRecord plugin for self-referential and double-sided polymorphic associations."
   p.url = "http://blog.evanweaver.com/files/doc/fauna/has_many_polymorphs/"  
   p.docs_host = "blog.evanweaver.com:~/www/bax/public/files/doc/"  
-  p.dependencies = ["activerecord"]
+  p.dependencies = ["activerecord >= 2.1.1"]
   p.rdoc_pattern = /polymorphs\/association|polymorphs\/class_methods|polymorphs\/reflection|polymorphs\/autoload|polymorphs\/configuration|README|CHANGELOG|TODO|LICENSE|templates\/migration\.rb|templates\/tag\.rb|templates\/tagging\.rb|templates\/tagging_extensions\.rb/    
   p.require_signed = true
   p.clean_pattern += ["**/ruby_sess*", "**/generated_models/**"]
   p.test_pattern = ["test/unit/*_test.rb", "test/integration/*_test.rb", "test/generator/*_test.rb"]
+  p.version = '8.11.1'
 end
 
 desc "Run all the tests for every database adapter" 
